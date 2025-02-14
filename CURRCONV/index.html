@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="conv.css">
+</head>
+<body>
+    <div id="main">
+        <div class="div2">
+        <h1>Currency Convertor</h1>
+        <form>
+            <div id="container">
+                <div name="from">
+                    <img src="https://flagsapi.com/US/flat/64.png" id="from-img">
+                    <select name="from-select">
+                    </select>
+                </div>
+                <div name="to">
+                    <img src="https://flagsapi.com/IN/flat/64.png" id="to-img">
+                    <select name="to-select">
+                    </select>
+                </div>
+            </div>
+            <p>Enter The Amount To Be Converted : </p>
+            <div class="inputs">
+                <div class="input-group">
+                    <p id="from-text">USD</p>
+                    <input type="number" id="text" value="1">
+                </div>
+                <div class="input-group">
+                    <img src="conv.png">
+
+                </div>
+                <div class="input-group">
+                    <p id="to-text">INR</p>
+                    <input type="number" id="ans" value="87.075">
+                </div>
+            </div>
+            <button id="btn"> Convert </button>
+
+        </form>
+    </div>
+    </div>
+    <script src="conv.js"></script>
+</body>
+</html>

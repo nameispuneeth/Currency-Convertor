@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Quicksand", serif;
+}
+body{
+    background-color: rgb(255, 255, 202);
+    text-align: center;
+}
+img{
+    display: block;
+    margin: 0 auto;
+    width: 7vmin;
+    height:7vmin;
+}
+h1 {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #9da77e;
+  }
+  
+  h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: burlywood;
+    animation: underline 10s linear infinite;
+  }
+  
+  @keyframes underline {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  
+  
+#main{
+    padding: 6vh;
+    position: absolute;
+    top:50%;
+    width:50vmin;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid burlywood;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+option{
+    font-family: "Sour Gummy", serif;
+}
+select{
+    font-family: "Sour Gummy", serif;
+    font-weight: 400;
+    font-size: 2.5vh;
+    color:gray;
+    height: 5vh;
+    width:15vh;
+    margin-top: 0;
+    border-radius: 6px;
+    background-color: white;
+    text-align:justify;
+    border: 2px solid burlywood;
+}
+#container{
+    margin-top: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+p{
+    color: #9da77e;
+    margin-top: 7vh;
+    font-weight: bold;
+    margin-bottom: 1vh;
+}
+#from-text,#to-text{
+    margin-top: 5vh;
+    color: burlywood;
+}
+input{
+    width:13vh;
+    height: 5vh;
+    text-align: center;
+    border: 2px solid burlywood;
+    border-radius: 0.4rem; 
+    font-weight: 450;
+}
+button{
+    width:40vh;
+    height:6vh;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 6vh;
+    font-size: 2.5vh;
+    font-weight: bold;
+    background-color: #9da77e;
+    color:  rgb(255, 255, 202);
+    border: 2px solid #9da77e;
+}
+button:hover{
+    background-color: #CCD5AE;
+    border: 2px solid #CCD5AE;
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.input-group {
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-group img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 9vh;
+    width: 4vmin;
+    height: 4vmin;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size:2.5vh;
+    }
+    p{
+        font-size: 1.5vh;
+    }
+    input{
+        width:9vh;
+    }
+    button{
+        width:27vh;
+    }
+    select{
+        font-size:2vh;
+        width: 10vh;
+        height: 4vh;
+    }
+}
