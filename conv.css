@@ -5,7 +5,7 @@
     font-family: "Quicksand", serif;
 }
 body{
-    background-color: rgb(255, 255, 202);
+    background-color: burlywood;
     text-align: center;
 }
 img{
@@ -98,8 +98,10 @@ input{
     text-align: center;
     border: 2px solid burlywood;
     border-radius: 0.4rem; 
+    font-size: 2vh;
     font-weight: 450;
 }
+
 button{
     width:40vh;
     height:6vh;
@@ -116,6 +118,7 @@ button{
 button:hover{
     background-color: #CCD5AE;
     border: 2px solid #CCD5AE;
+    cursor: pointer;
 }
 .inputs{
     display: flex;
